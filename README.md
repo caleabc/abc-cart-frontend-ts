@@ -1,6 +1,6 @@
 ### ABC CART
 
-Frontend of the online shopping platform
+Frontend of the online shopping platform (written in TypeScript)
 
 ### Installation
 
