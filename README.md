@@ -17,7 +17,3 @@ npm start
 ### Documentation
 
 Documentation will be added here shortly...
-
-### Thanks
-
-Big thanks to the following people...
