@@ -1,0 +1,39 @@
+.navbar-main-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-right-section {
+  display: flex;
+}
+
+.navbar-brand {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.navbar-search {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navbar-favorites {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navbar-cart {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navbar-account {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  margin: 1rem;
+}

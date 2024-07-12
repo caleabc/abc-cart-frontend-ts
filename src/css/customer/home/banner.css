@@ -1,0 +1,23 @@
+.banner-main-div {
+  display: flex;
+  align-items: center;
+}
+
+.banner-left-section {
+  width: 50%;
+}
+
+.banner-right-section {
+  width: 50%;
+}
+
+.banner-message {
+  font-family: montserrat;
+  font-size: 8rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.banner-image {
+  max-width: 100%;
+}

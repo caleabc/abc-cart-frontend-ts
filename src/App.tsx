@@ -1,11 +1,16 @@
-import React from "react";
+// Lib
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Comp
+import Home from "./pages/customer/Home";
 
 function App() {
   return (
-    <React.Fragment>
-      <p>Welcome to ABC</p>
-      <p>This is an online shopping platform</p>
-    </React.Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
