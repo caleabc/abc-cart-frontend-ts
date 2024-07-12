@@ -1,39 +1,37 @@
-// Lib
-import React from "react";
+// Comp
+import Category from "./Category";
 
 // CSS
 import "../../../css/customer/home/categories.css";
 
-// Code on line 8 can cause error, currently i don't know why, so i will be using 'require' instead of 'import'
+// Code on line 8 can cause error, currently i don't know why, so i will be using 'require' instead of 'import', see line 10
 // import tshirt from "../../../images/tshirt.png";
 
 let tshirt = require("../../../images/tshirt.png");
+let shorts = require("../../../images/shorts.png");
+let jeans = require("../../../images/jeans.png");
+let slipper = require("../../../images/slipper.png");
+let shoes = require("../../../images/shoes.png");
+let cap = require("../../../images/cap.png");
+let perfume = require("../../../images/perfume.png");
+let readingGlass = require("../../../images/reading-eyeglasses.png");
 
 function Categories() {
   return (
-    <React.Fragment>
-      <div className="categories-main-div">
-        <div className="category">
-          <img className="category-image" src={tshirt} alt="t-shirt" />
-          <p>T-Shirt</p>
-        </div>
-
-        <div className="category">
-          <img className="category-image" src={tshirt} alt="t-shirt" />
-          <p>T-Shirt</p>
-        </div>
-
-        <div className="category">
-          <img className="category-image" src={tshirt} alt="t-shirt" />
-          <p>T-Shirt</p>
-        </div>
-
-        <div className="category">
-          <img className="category-image" src={tshirt} alt="t-shirt" />
-          <p>T-Shirt</p>
-        </div>
-      </div>
-    </React.Fragment>
+    <div>
+      <Category imgSrc={tshirt} imgAlt="t-shirt" desc="T-Shirt" />
+      <Category imgSrc={shorts} imgAlt="shorts" desc="Shorts" />
+      <Category imgSrc={jeans} imgAlt="jeans" desc="Jeans" />
+      <Category imgSrc={slipper} imgAlt="slipper" desc="Slipper" />
+      <Category imgSrc={shoes} imgAlt="shoes" desc="Shoes" />
+      <Category imgSrc={cap} imgAlt="cap" desc="Cap" />
+      <Category imgSrc={perfume} imgAlt="perfume" desc="Perfume" />
+      <Category
+        imgSrc={readingGlass}
+        imgAlt="reading glass"
+        desc="Reading Glass"
+      />
+    </div>
   );
 }
 

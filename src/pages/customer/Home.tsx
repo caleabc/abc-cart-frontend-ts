@@ -11,9 +11,10 @@ function Home() {
   return (
     <React.Fragment>
       <Navbar />
+      <div></div>
       <Spacer height={5} />
       <Banner />
-      <Spacer height={5} />
+      <Spacer height={10} />
       <Categories />
     </React.Fragment>
   );

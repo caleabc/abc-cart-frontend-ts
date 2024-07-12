@@ -9,9 +9,10 @@ function Navbar() {
       </div>
 
       <div className="navbar-right-section">
-        <p className="navbar-search">Search</p>
+        <p className="navbar-products">Products</p>
         <p className="navbar-favorites">Favorites</p>
         <p className="navbar-cart">Cart</p>
+        <p className="navbar-search">Search</p>
         <p className="navbar-account">Account</p>
       </div>
     </div>

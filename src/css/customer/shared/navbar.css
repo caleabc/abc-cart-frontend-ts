@@ -14,7 +14,7 @@
   margin: 1rem;
 }
 
-.navbar-search {
+.navbar-products {
   font-family: montserrat;
   font-size: 1.5rem;
   margin: 1rem;
@@ -27,6 +27,12 @@
 }
 
 .navbar-cart {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navbar-search {
   font-family: montserrat;
   font-size: 1.5rem;
   margin: 1rem;

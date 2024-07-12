@@ -1,12 +1,3 @@
-.categories-main-div {
+.categories-div {
   display: flex;
-  justify-content: space-between;
-}
-
-.category {
-  width: 15%;
-}
-
-.category-image {
-  max-width: 100%;
 }

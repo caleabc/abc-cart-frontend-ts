@@ -7,7 +7,7 @@ function Banner() {
   return (
     <div className="banner-main-div">
       <div className="banner-left-section">
-        <p className="banner-message">Celebrate Holiday Season</p>
+        <p className="banner-message">Shop with us this holiday season!</p>
       </div>
       <div className="banner-right-section">
         <img className="banner-image" src={url} alt="holiday season image" />
