@@ -6,6 +6,9 @@ import Navbar from "../../components/customer/shared/Navbar";
 import Banner from "../../components/customer/home/Banner";
 import Spacer from "../../components/customer/shared/Spacer";
 import Categories from "../../components/customer/home/Categories";
+import FeaturedProducts from "../../components/customer/home/FeaturedProducts";
+import Feedback from "../../components/customer/home/Feedback";
+import Footer from "../../components/customer/shared/Footer";
 
 function Home() {
   return (
@@ -16,6 +19,12 @@ function Home() {
       <Banner />
       <Spacer height={10} />
       <Categories />
+      <Spacer height={5} />
+      <FeaturedProducts />
+      <Spacer height={5} />
+      <Feedback />
+      <Spacer height={5} />
+      <Footer />
     </React.Fragment>
   );
 }

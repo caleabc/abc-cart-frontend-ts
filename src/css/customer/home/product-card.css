@@ -1,16 +1,28 @@
-.category {
+.product-card-main-div {
+  cursor: pointer;
+
   width: 25%;
-  padding: 5rem;
+  padding: 4rem;
   box-sizing: border-box; /* Purpose of 'box-sizing: border-box;', this ensures that the element’s width remains constant, accounting for any padding you add.*/
   display: inline-block; /* Purpose of adding  'display: inline-block;', Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. For more info visit this site: 'https://www.w3schools.com/css/css_inline-block.asp'. Big thanks to 'W3schools' site */
 }
 
-.category-image {
+.product-card-main-div:hover {
+  border: 1px solid lightgray;
+}
+
+.product-card-image {
   max-width: 100%; /* Purpose of adding 'max-width: 100%;' to the image, is to follow the width of its parent div */
 }
 
-.category-description {
+.product-card-name {
   font-family: montserrat;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.product-card-price {
+  font-family: montserrat;
+  font-size: 1.2rem;
   text-align: center;
 }

@@ -1,0 +1,11 @@
+.feedback-main-div {
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-message {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  padding: 2rem;
+}
