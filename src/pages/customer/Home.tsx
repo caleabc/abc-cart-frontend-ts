@@ -8,14 +8,14 @@ import Spacer from "../../components/customer/shared/Spacer";
 import Categories from "../../components/customer/home/Categories";
 import FeaturedProducts from "../../components/customer/home/FeaturedProducts";
 import Feedback from "../../components/customer/home/Feedback";
+import HorizontalRule from "../../components/customer/shared/HorizontalRule";
 import Footer from "../../components/customer/shared/Footer";
 
 function Home() {
   return (
     <React.Fragment>
       <Navbar />
-      <div></div>
-      <Spacer height={5} />
+      <Spacer height={2} />
       <Banner />
       <Spacer height={10} />
       <Categories />
@@ -24,6 +24,7 @@ function Home() {
       <Spacer height={5} />
       <Feedback />
       <Spacer height={5} />
+      <HorizontalRule />
       <Footer />
     </React.Fragment>
   );

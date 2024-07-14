@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 // CSS
 import "../../../css/customer/home/product-card.css";
 
-interface Props {
+type Props = {
   id: string;
   photoUrl: string;
   name: string;
   price: number;
-}
+};
 
 function ProductCard(props: Props) {
   // Lib

@@ -1,7 +1,7 @@
-interface Props {
+type Props = {
   width?: number;
   height?: number;
-}
+};
 
 function Spacer(props: Props) {
   let width = props.width === undefined ? 0 : props.width;

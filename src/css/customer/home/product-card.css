@@ -2,7 +2,10 @@
   cursor: pointer;
 
   width: 25%;
-  padding: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   box-sizing: border-box; /* Purpose of 'box-sizing: border-box;', this ensures that the element’s width remains constant, accounting for any padding you add.*/
   display: inline-block; /* Purpose of adding  'display: inline-block;', Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. For more info visit this site: 'https://www.w3schools.com/css/css_inline-block.asp'. Big thanks to 'W3schools' site */
 }

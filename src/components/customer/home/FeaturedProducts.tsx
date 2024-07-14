@@ -1,5 +1,5 @@
 // Comp
-import ProductCard from "./ProductCard";
+import ProductCard from "../shared/ProductCard";
 
 function FeaturedProducts() {
   // Note: product is hard coded for now
