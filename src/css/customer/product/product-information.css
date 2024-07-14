@@ -1,9 +1,9 @@
-.product-information-main-div {
-}
-
 .product-image-section {
+  display: inline-block;
   width: 50%;
-  display: inline-block; /* Purpose of adding  'display: inline-block;', Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. For more info visit this site: 'https://www.w3schools.com/css/css_inline-block.asp'. Big thanks to 'W3schools' site */
+
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .product-image {
@@ -11,23 +11,31 @@
 }
 
 .product-information-section {
+  display: inline-block;
   width: 50%;
-  display: inline-block; /* Purpose of adding  'display: inline-block;', Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. For more info visit this site: 'https://www.w3schools.com/css/css_inline-block.asp'. Big thanks to 'W3schools' site */
-}
 
-.parentt {
-  display: flex;
-  flex-wrap: wrap; /* Allow the items to wrap onto multiple lines */
-}
-
-.childd {
-  /* Big thanks to chatGPT for giving solution on the styling problem... */
-
-  flex: 0 0 25%; /* Do not grow or shrink, and set the basis to 25% */
-  overflow: hidden; /* Prevent content from overflowing */
-  word-wrap: break-word; /* Break words if needed to fit the content */
-
-  border: 1px solid green;
+  vertical-align: top; /* By default 'display: inline-block' elements align themselves based on the baseline (or located at the bottom, atleast in my case) of the text content. When one of the inline-block elements has significantly more content, it can affect the vertical alignment of the other inline-block elements, to make sure the content go at the top use this command 'vertical-align: top;' */
   padding: 1rem;
   box-sizing: border-box;
+}
+
+.product-name {
+  font-family: montserrat;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.product-price {
+  font-family: montserrat;
+  font-size: 1.5rem;
+}
+
+.product-shipping-information-header {
+  font-family: montserrat;
+  font-size: 1.2rem;
+}
+
+.product-shipping-information {
+  font-family: montserrat;
+  font-size: 1.2rem;
 }
