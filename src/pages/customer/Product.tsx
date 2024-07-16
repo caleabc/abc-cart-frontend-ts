@@ -1,26 +1,38 @@
 // Lib
 import React from "react";
+import { useParams } from "react-router-dom";
 
 // Components
 import Navbar from "../../components/customer/shared/Navbar";
 import ProductInformation from "../../components/customer/product/ProductInformation";
 
 function Product() {
-  let product1 = {
-    productId: "1",
+  // Always make sure that productId is not an empty string
+  let productId = useParams().id || "";
+
+  // Do not delete line 14-18, the following code check if productId has a correct data
+  if (productId === undefined) {
+    console.log(
+      "Something went wrong on productId, can be found on src>pages>customer>Product.tsx on line 11"
+    );
+  }
+
+  let product = {
+    productId: productId,
     photoUrl:
       "https://www.penshoppe.com/cdn/shop/products/976614-Black_3.jpg?v=1706668836&width=1800",
     name: "Tshirt",
     price: 499,
   };
+
   return (
     <React.Fragment>
       <Navbar />
       <ProductInformation
-        productId={product1.productId}
-        photoUrl={product1.photoUrl}
-        name={product1.name}
-        price={product1.price}
+        productId={product.productId}
+        photoUrl={product.photoUrl}
+        name={product.name}
+        price={product.price}
       />
     </React.Fragment>
   );
