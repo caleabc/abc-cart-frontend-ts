@@ -7,7 +7,7 @@ import ProductInformation from "../../components/customer/product/ProductInforma
 
 function Product() {
   let product1 = {
-    id: "1",
+    productId: "1",
     photoUrl:
       "https://www.penshoppe.com/cdn/shop/products/976614-Black_3.jpg?v=1706668836&width=1800",
     name: "Tshirt",
@@ -17,7 +17,7 @@ function Product() {
     <React.Fragment>
       <Navbar />
       <ProductInformation
-        id={product1.id}
+        productId={product1.productId}
         photoUrl={product1.photoUrl}
         name={product1.name}
         price={product1.price}

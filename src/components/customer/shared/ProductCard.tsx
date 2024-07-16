@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "../../../css/customer/home/product-card.css";
 
 type Props = {
-  id: string;
+  productId: string;
   photoUrl: string;
   name: string;
   price: number;
@@ -15,15 +15,15 @@ function ProductCard(props: Props) {
   // Lib
   let navigate = useNavigate();
 
-  function handleProductCard(id: string) {
-    navigate(`/product/${id}`);
+  function handleProductCard(productId: string) {
+    navigate(`/product/${productId}`);
   }
 
   return (
     <div
       className="product-card-main-div"
       onClick={function () {
-        handleProductCard(props.id);
+        handleProductCard(props.productId);
       }}
     >
       <img

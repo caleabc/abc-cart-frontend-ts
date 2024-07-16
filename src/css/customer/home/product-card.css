@@ -2,8 +2,8 @@
   cursor: pointer;
 
   width: 25%;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   box-sizing: border-box; /* Purpose of 'box-sizing: border-box;', this ensures that the element’s width remains constant, accounting for any padding you add.*/

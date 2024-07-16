@@ -33,9 +33,78 @@
 .product-shipping-information-header {
   font-family: montserrat;
   font-size: 1.2rem;
+  color: gray;
 }
 
 .product-shipping-information {
   font-family: montserrat;
   font-size: 1.2rem;
+  color: gray;
+}
+
+/* Quantity section */
+
+.quantity-tool-main-div {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-tool-subtract {
+  font-family: montserrat;
+  font-size: 1.5rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+.quantity-tool-quantity {
+  width: 1.2rem; /* I added 'width: 1.5rem;' and removed 'padding-left:1rem' and 'padding-right:1rem' to prevent the quantity tool main div from size changes when quantity increases */
+  font-family: montserrat;
+  font-size: 1.5rem;
+
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.quantity-tool-add {
+  font-family: montserrat;
+  font-size: 1.5rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+.add-to-cart-button {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: 1px solid gray;
+  font-family: montserrat;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.product-information-quantity-header {
+  font-family: montserrat;
+  font-size: 1.2rem;
+
+  margin-bottom: 0.5rem;
 }
