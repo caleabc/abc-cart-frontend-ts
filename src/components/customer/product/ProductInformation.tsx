@@ -12,9 +12,11 @@ import { useState } from "react";
 // Comp
 import Spacer from "../shared/Spacer";
 
+// Utils
+import createId from "../../../utils/createId";
+
 // CSS
 import "../../../css/customer/product/product-information.css";
-import Product from "../../../pages/customer/Product";
 
 type Props = {
   productId: string;
@@ -38,6 +40,8 @@ function ProductInformation(props: Props) {
   }
 
   function handleAddToCart() {
+    // Save item to localStorage
+
     // The reason why there has code like this || '[]' is because 'null' can't be parsed when working with TypeScript,
     // example: localStorage.getItem("items") is equal to null then it can't be parsed that is why you need to add this code || '[]'
     // If items is an empty array means localStorage.getItem("items") is null
@@ -49,11 +53,7 @@ function ProductInformation(props: Props) {
       price: props.price,
     };
 
-    if (items.length === 0) {
-      items.push({ product: productDetails, quantity: quantity });
-    } else {
-      items.push({ product: productDetails, quantity: quantity });
-    }
+    items.push({ id: createId(), product: productDetails, quantity: quantity });
 
     // Convert or stringify the array to string data type since localstorage only accept string
     // On this part you are now overriding items in localstorage since items was already created

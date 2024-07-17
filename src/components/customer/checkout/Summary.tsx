@@ -1,10 +1,13 @@
 // Lib
 import { useEffect, useState } from "react";
 
-// CSS
-import "../../../css/customer/checkout/cart.css";
+// Comp
+import Spacer from "../shared/Spacer";
 
-function Cart() {
+// CSS
+import "../../../css/customer/checkout/summary.css";
+
+function Summary() {
   type ProductDetails = {
     productId: string;
     name: string;
@@ -19,20 +22,6 @@ function Cart() {
 
   let [items, setItems] = useState<Item[]>([]);
   let [total, setTotal] = useState(0);
-
-  function handleDeleteItem(id: string) {
-    let updatedItems = [];
-    for (let i = 0; i < items.length; i++) {
-      if (items[i].id !== id) {
-        updatedItems.push(items[i]);
-      }
-    }
-
-    // Must also delete the item in localStorage
-    localStorage.setItem("items", JSON.stringify(updatedItems));
-
-    setItems(updatedItems);
-  }
 
   function handleCalculateTotal() {
     let output = 0;
@@ -59,17 +48,18 @@ function Cart() {
   );
 
   return (
-    <div className="cart-main-div">
-      <div className="cart-items">
-        <p className="cart-header">Cart</p>
-        {total !== 0 && (
-          <div>
-            <p className="cart-items-header">Name</p>
-            <p className="cart-items-header">Price</p>
-            <p className="cart-items-header">Quantity</p>
-            <p className="cart-items-header">Delete</p>
-          </div>
-        )}
+    <div className="summary-main-div">
+      <div className="summary-div">
+        <p className="summary-text">Summary</p>
+
+        {/* Cart section */}
+        <div>
+          <p className="cart-items-header">Name</p>
+          <p className="cart-items-header">Price</p>
+          <p className="cart-items-header">Quantity</p>
+          <p className="cart-items-header">Delete</p>
+        </div>
+
         {items.map(function (item: Item) {
           return (
             <div key={item.id}>
@@ -78,14 +68,6 @@ function Cart() {
                 ₱{item.product.price}.00
               </p>
               <p className="cart-product-information">{item.quantity}</p>
-              <p
-                className="cart-delete-item"
-                onClick={function () {
-                  handleDeleteItem(item.id);
-                }}
-              >
-                <i className="bi bi-trash"></i>
-              </p>
             </div>
           );
         })}
@@ -94,10 +76,22 @@ function Cart() {
           <p className="cart-total">₱{total}.00</p>
         </div>
 
+        <Spacer height={2} />
+
+        {/* Shipping address section */}
+        <p className="summary-shipping-address">1233</p>
+        <p className="summary-shipping-address">Riverside</p>
+        <p className="summary-shipping-address">Cagwait</p>
+        <p className="summary-shipping-address">Philippines</p>
+
+        {/* Go back and continue button section */}
+        <button className="checkout-go-back-button">Go back</button>
         <button className="checkout-continue-button">Continue</button>
+
+        {/* summary-div */}
       </div>
     </div>
   );
 }
 
-export default Cart;
+export default Summary;

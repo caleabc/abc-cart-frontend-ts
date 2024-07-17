@@ -6,7 +6,6 @@ import Navbar from "../../components/customer/shared/Navbar";
 import Spacer from "../../components/customer/shared/Spacer";
 import ProductToolbar from "../../components/customer/products/ProductToolbar";
 import ProductsSection from "../../components/customer/products/ProductsSection";
-import HorizontalRule from "../../components/customer/shared/HorizontalRule";
 import Footer from "../../components/customer/shared/Footer";
 
 function Products() {
@@ -17,7 +16,6 @@ function Products() {
       <ProductToolbar />
       <ProductsSection />
       <Spacer height={2} />
-      <HorizontalRule />
       <Footer />
     </React.Fragment>
   );

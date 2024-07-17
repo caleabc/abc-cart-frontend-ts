@@ -7,7 +7,7 @@ import Navbar from "../../components/customer/shared/Navbar";
 import ProductInformation from "../../components/customer/product/ProductInformation";
 
 function Product() {
-  // Always make sure that productId is not an empty string
+  // Currently i have no idea why it has an initial value of 'undefined' that's the reason why i add this code || "", always make sure that productId is not an empty string
   let productId = useParams().id || "";
 
   // Do not delete line 14-18, the following code check if productId has a correct data
@@ -17,6 +17,7 @@ function Product() {
     );
   }
 
+  // Todo: Line 21 must change to server request...
   let product = {
     productId: productId,
     photoUrl:
