@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 // CSS
-import "../../../css/customer/checkout/cart.css";
+import "../../css/customer/cart/cart.css";
 
 function Cart() {
   type ProductDetails = {
@@ -67,7 +67,7 @@ function Cart() {
             <p className="cart-items-header">Name</p>
             <p className="cart-items-header">Price</p>
             <p className="cart-items-header">Quantity</p>
-            <p className="cart-items-header">Delete</p>
+            <p className="cart-items-header">Remove</p>
           </div>
         )}
         {items.map(function (item: Item) {

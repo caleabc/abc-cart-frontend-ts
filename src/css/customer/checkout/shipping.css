@@ -23,8 +23,12 @@
   box-sizing: border-box;
 }
 
+.shipping-address-input-field:focus {
+  outline: none; /* Remove the default outline */
+}
+
 /*
-The following shared styles can be found on src > css > customer > checkout > cart.css
+The following shared styles can be found on src > css > customer > cart > cart.css
 .checkout-go-back-button
 .checkout-continue-button
 */
